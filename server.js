@@ -6,9 +6,9 @@ const app = express();
 app.use(express.static(__dirname + "/dist/ngx-admin-starter-kit"));
 
 // Send all requests to index.html
-// app.get("/*", function(req, res) {
-//   res.sendFile(path.join(__dirname + "/dist/ngx-admin-starter-kit/index.html"));
-// });
+app.get("/*", function(req, res) {
+  res.sendFile(path.join(__dirname + "/dist/ngx-admin-starter-kit/index.html"));
+});
 
 // default Heroku PORT
 app.listen(process.env.PORT || 3000);

@@ -1,5 +1,5 @@
 {
-  "name": "ngx-admin",
+  "name": "ngx-admin-starter-kit",
   "version": "4.0.1",
   "license": "MIT",
   "repository": {
@@ -14,7 +14,7 @@
     "conventional-changelog": "conventional-changelog",
     "start": "node server.js",
     "build": "ng build",
-    "heroku-postbuild": "ng build --prod",
+    "postinstall": "ng build --aot --prod",
     "build:prod": "npm run build -- --prod --aot",
     "test": "ng test",
     "test:coverage": "rimraf coverage && npm run test -- --code-coverage",
