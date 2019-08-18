@@ -14,7 +14,7 @@
     "conventional-changelog": "conventional-changelog",
     "start": "node server.js",
     "build": "ng build",
-    "postinstall": "ng build --aot --prod",
+    "heroku-postbuild": "ng build --prod",
     "build:prod": "npm run build -- --prod --aot",
     "test": "ng test",
     "test:coverage": "rimraf coverage && npm run test -- --code-coverage",
